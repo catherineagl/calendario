@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 						$.each(parseEvents, function (i, event) {
 							$date.append(`
-						<li class="text-truncate">${event}</li>
+						<li class="text-truncate fw-bold" style="color: #3166b5">${event}</li>
 						`);
 						});
 					} else return;
@@ -132,7 +132,6 @@ $(document).ready(function () {
 	$(document).on('click', '#delete-event', function (e) {
 		let $id = $('#input-id').val();
 		let title = e.target.dataset.title;
-		//console.log(dayEvents.filter((item) => item !== title));
 		let i = dayEvents.indexOf(title);
 		dayEvents.splice(i, 1);
 		$.ajax({
