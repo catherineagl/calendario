@@ -1,0 +1,14 @@
+{
+	"name": "calendario",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"start": "json-server --watch calendar.json"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"json-server": "^0.17.0"
+	}
+}
